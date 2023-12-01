@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">A2023_12_kampus</string>
+    <string name="hello">HelloWorld</string>
+</resources>
