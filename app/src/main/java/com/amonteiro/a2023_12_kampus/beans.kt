@@ -5,8 +5,10 @@ package com.amonteiro.a2023_12_kampus
 data class WeatherBean(
     var name: String,
     var main: TempBean,
-    var wind : WindBean
+    var wind : WindBean,
+    var weather : List<DescriptionBean>
 )
 
+data class DescriptionBean(var icon:String)
 data class TempBean(var temp: Double)
 data class WindBean(var speed: Double)

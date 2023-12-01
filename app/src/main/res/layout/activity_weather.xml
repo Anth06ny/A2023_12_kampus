@@ -24,6 +24,13 @@
         android:text="-"
         tools:text="Hello"/>
 
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#D11414" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"

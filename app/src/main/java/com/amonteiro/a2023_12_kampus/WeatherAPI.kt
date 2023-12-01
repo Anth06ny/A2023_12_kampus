@@ -18,6 +18,7 @@ object WeatherAPI {
 
 
     fun loadWeather(city: String): WeatherBean {
+
         val json = sendGet(URL_API_WEATHER.format(city))
         return gson.fromJson(json, WeatherBean::class.java)
     }
