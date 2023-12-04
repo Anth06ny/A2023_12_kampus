@@ -19,6 +19,9 @@ class WeatherActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.lifecycleOwner = this
+        binding.viewModel = model
+
         observe()
 
         binding.btLoad.setOnClickListener {
@@ -35,18 +38,18 @@ class WeatherActivity : AppCompatActivity() {
 
     fun observe() {
 
-        model.runInProgress.observe(this) {
-            binding.progressBar.isVisible = it
-        }
+//        model.runInProgress.observe(this) {
+//            binding.progressBar.isVisible = it
+//        }
 
         model.data.observe(this) {
             binding.tvData.text = "il fait ${it?.main?.temp ?: "-"}° à ${it?.name ?: "-"}"
         }
-
-
-        model.errorMessage.observe(this) {
-            binding.tvError.text = it
-        }
+//
+//
+//        model.errorMessage.observe(this) {
+//            binding.tvError.text = it
+//        }
     }
 
 }

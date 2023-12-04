@@ -26,7 +26,7 @@ class WeatherViewModel : ViewModel() {
 
     fun loadData(cityName :String) {
         if (_runInProgress.value != true) {
-            _errorMessage.postValue( "")
+            _errorMessage.postValue( null)
             _data.postValue(null)
             _runInProgress.postValue(true)
 
