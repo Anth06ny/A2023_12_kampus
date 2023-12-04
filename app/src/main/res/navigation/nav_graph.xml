@@ -19,4 +19,18 @@
         android:name="com.amonteiro.a2023_12_kampus.Screen12Fragment"
         android:label="fragment_screen12"
         tools:layout="@layout/fragment_screen12" />
+    <fragment
+        android:id="@+id/screen21Fragment"
+        android:name="com.amonteiro.a2023_12_kampus.Screen21Fragment"
+        android:label="fragment_screen21"
+        tools:layout="@layout/fragment_screen21" >
+        <action
+            android:id="@+id/action_screen21Fragment_to_screen22Fragment"
+            app:destination="@id/screen22Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screen22Fragment"
+        android:name="com.amonteiro.a2023_12_kampus.Screen22Fragment"
+        android:label="fragment_screen22"
+        tools:layout="@layout/fragment_screen22" />
 </navigation>
