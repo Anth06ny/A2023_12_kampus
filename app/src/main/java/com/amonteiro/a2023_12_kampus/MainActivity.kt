@@ -34,10 +34,7 @@ class MainActivity : AppCompatActivity() {
                 runOnUiThread {
                     binding.progressBar2.isVisible = false
                 }
-
-
             }
-
             binding.et.setText("...")
         }
     }
