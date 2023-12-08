@@ -9,12 +9,12 @@ import kotlin.concurrent.thread
 
 class WeatherViewModel : ViewModel() {
 
-    private var _data = MutableLiveData<WeatherBean>(null)
-    var data :LiveData<WeatherBean> = _data
+    private var _data = MutableLiveData<WeatherBean?>(null)
+    var data :LiveData<WeatherBean?> = _data
 
 
-    private var _errorMessage = MutableLiveData<String>(null)
-    var errorMessage :LiveData<String> = _errorMessage
+    private var _errorMessage = MutableLiveData<String?>(null)
+    var errorMessage :LiveData<String?> = _errorMessage
 
     var _runInProgress = MutableLiveData(false)
     var runInProgress :LiveData<Boolean> = _runInProgress
