@@ -93,7 +93,13 @@ class ComposeViewModel : ViewModel() {
 
     fun loadData() {//Simulation de chargement de donnée
         _myList.clear()
+
+//        viewModelScope.launch(Dispatchers.Default) {
+//            //Ma requete
+//
+//        }
         Thread.sleep(1000) //simule temps de la requête
         _myList.addAll(pictureList)
+
     }
 }
